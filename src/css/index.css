@@ -1,0 +1,477 @@
+@charset "UTF-8";
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "微软雅黑";
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+a,
+u {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+input {
+  outline: none;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/* 封装好类名 */
+.border_none {
+  border: none !important;
+}
+
+.bg_none {
+  background: none !important;
+}
+
+.margin_none {
+  margin: none !important;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+/* 多行文本溢出省略号显示 */
+.text_ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 各种居中 */
+/* 在浏览器窗口左右居中 */
+.fixed_center {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* 让子元素在父元素里面左右上下居中 */
+.dom_center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* 万能清除法 */
+.clear_fix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.clear_fix {
+  zoom: 1;
+}
+
+.top-wrap,
+.head-wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#top {
+  width: 100%;
+  background: #f5f5f5;
+}
+#top .top-wrap {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#top .top-wrap .c-h {
+  width: 46px;
+  height: 28px;
+  padding: 0 23px 0 15px;
+  position: relative;
+  cursor: pointer;
+}
+#top .top-wrap .c-h .c-h-title {
+  font-size: 12px;
+  color: #777;
+  line-height: 28px;
+}
+#top .top-wrap .c-h .c-h-jt {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  color: #999;
+}
+#top .top-wrap .top-nav {
+  width: 771px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-nav li {
+  padding: 0 5 0 15px;
+  position: relative;
+}
+.top-nav li a {
+  display: block;
+  font-size: 12px;
+  line-height: 28px;
+  color: #777;
+  margin-right: 15px;
+}
+.top-nav li .top-xg {
+  background: url(../images/index.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 7px;
+  right: 3px;
+  z-index: 1;
+  background-position: -207px -184px;
+}
+.top-nav li .one {
+  position: absolute;
+  top: 7px;
+  right: -7px;
+  z-index: 1;
+  background-position: -207px -184px;
+}
+.top-nav li .iconfont {
+  position: absolute;
+  top: 7px;
+  right: 1px;
+  width: 16px;
+  height: 16px;
+  color: #999;
+}
+
+.top-nav .qdyl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-nav .qdyl .lw {
+  width: 15px;
+  height: 18px;
+  background: url(../images/qdyl.gif) no-repeat;
+  margin-right: 3px;
+}
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "微软雅黑";
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+a,
+u {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+input {
+  outline: none;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/* 封装好类名 */
+.border_none {
+  border: none !important;
+}
+
+.bg_none {
+  background: none !important;
+}
+
+.margin_none {
+  margin: none !important;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+/* 多行文本溢出省略号显示 */
+.text_ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 各种居中 */
+/* 在浏览器窗口左右居中 */
+.fixed_center {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* 让子元素在父元素里面左右上下居中 */
+.dom_center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* 万能清除法 */
+.clear_fix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.clear_fix {
+  zoom: 1;
+}
+
+.top-wrap,
+.head-wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#head {
+  width: 100%;
+  height: 100px;
+  background: darkkhaki;
+}
+#head .head-wrap {
+  background: cornflowerblue;
+  height: 100px;
+}
+
+.head-logo {
+  width: 160px;
+  height: 100px;
+}
+.head-logo a {
+  width: 100%;
+  height: 100px;
+}
+.head-logo a img {
+  width: 100%;
+  height: 100%;
+}
+
+.c-service {
+  width: 304px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.c-service a {
+  width: 304px;
+  height: 100px;
+}
+.c-service a img {
+  width: 100%;
+  height: 100%;
+}
+
+.head-cart {
+  width: 96px;
+  background: chartreuse;
+}
+
+.head-search {
+  margin-top: 33px;
+  width: 391px;
+  background: coral;
+}
+.head-search .head-form {
+  width: 387px;
+  height: 32px;
+  border: 2px solid #fa2a83;
+  border-radius: 2px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.head-search .head-form .c-input {
+  padding: 2px 12px;
+  width: 311px;
+  height: 28px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #333;
+  border: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background: #fff;
+}
+.head-search .head-form .c-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 6px;
+  display: block;
+  width: 53px;
+  height: 26px;
+  background: #fa2a83;
+  text-align: center;
+}
+.head-search .head-form .c-button .c-icon {
+  background: url(../images/index.png) no-repeat;
+  background-position: -285px -104px;
+  width: 19px;
+  height: 22px;
+  display: inline-block;
+}
+.head-search .hotword {
+  height: 20px;
+  margin: 2px;
+  background: chartreuse;
+}
+
+/*# sourceMappingURL=index.css.map */

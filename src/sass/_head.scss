@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import "common";
+$size:100%;
+$h:100px;
+#head {
+    width: $size;
+    height: $h;
+    background: darkkhaki;
+    .head-wrap {
+        background: cornflowerblue;
+        height: $h;
+    }
+}
+
+.head-logo {
+    width: 160px;
+    height: $h;
+    a {
+        width: $size;
+        height: $h;
+        img {
+            width: $size;
+            height: $size;
+        }
+    }
+}
+
+.c-service {
+    width: 304px;
+    height: $h;
+    display: flex;
+    justify-content: space-between;
+    a {
+        width: 304px;
+        height: $h;
+        img {
+            width: $size;
+            height: $size;
+        }
+    }
+}
+
+.head-cart {
+    width: 96px;
+    // height: $h;
+    background: chartreuse;
+}
+
+.head-search {
+    margin-top: 33px;
+    width: 391px;
+    background: coral;
+    .head-form {
+        width: 387px;
+        height: 32px;
+        border: 2px solid #fa2a83;
+        border-radius: 2px;
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        .c-input {
+            padding: 2px 12px;
+            width: 311px;
+            height: 28px;
+            line-height: 30px;
+            font-size: 14px;
+            color: #333;
+            border: none;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+            background: #fff;
+        }
+        .c-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding-top: 6px;
+            display: block;
+            width: 53px;
+            height: 26px;
+            background: #fa2a83;
+            text-align: center;
+            .c-icon {
+                background: url(../images/index.png) no-repeat;
+                background-position: -285px -104px;
+                width: 19px;
+                height: 22px;
+                display: inline-block;
+            }
+        }
+    }
+    .hotword {
+        height: 20px;
+        margin: 2px;
+        background: chartreuse;
+    }
+}
