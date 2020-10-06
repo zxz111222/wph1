@@ -1,0 +1,15 @@
+@charset "utf-8";
+$size:100%;
+$h:510px;
+#banner {
+    width: $size;
+    height: $h;
+    background: url(../images/banner_bg.jpg) no-repeat;
+    background-position: center top;
+    .banner-wrap {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        height: 452px;
+        background: olivedrab;
+    }
+}

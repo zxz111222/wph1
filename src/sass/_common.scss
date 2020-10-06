@@ -1,11 +1,13 @@
 @charset "utf-8";
-@import "reset";
 // @import "compass/reset";//引入重置模块
 // index公共部分的版心
 $bx-width:1000px;
 $bx-margin:0 auto;
 .top-wrap,
-.head-wrap {
+.head-wrap,
+.nav-wrap,
+.banner-wrap,
+.footer-wrap {
     width: $bx-width;
     margin: $bx-margin;
 }

@@ -1,0 +1,97 @@
+@charset "utf-8";
+$size:100%;
+$h:494px;
+#footer {
+    width: $size;
+    height: $h;
+    border-top: 1px solid #ebebeb;
+    background-color: #fcfcfc;
+    // color: #4d4d4d;
+    .footer-wrap {
+        height: $h;
+        background: plum;
+    }
+}
+
+.footer-vip {
+    overflow: hidden;
+    li {
+        float: left;
+        .footer-v2 {
+            display: block;
+            margin-top: 30px;
+            margin-right: 38px;
+            margin-left: 10px;
+            width: 72px;
+            height: 75px;
+            font-size: 0px;
+            text-indent: -100%;
+            background: url(../images/footer_common.png) no-repeat;
+        }
+        .qqlx {
+            background-position: 0 0;
+        }
+        .zphy {
+            background-position: -123px 0;
+        }
+        .qqzc {
+            background-position: -245px 0px;
+        }
+        .zycc {
+            background-position: -369px 0px;
+        }
+        .rcjy {
+            background-position: -492px 0px;
+        }
+        .zpbx {
+            background-position: -615px 0px;
+        }
+        .wyth {
+            background-position: -738px 0px;
+        }
+        .wqxl {
+            background-position: -859px 0px;
+        }
+    }
+}
+
+.footer-list {
+    line-height: 20px;
+    overflow: hidden;
+    margin: 37px 0px 25px;
+    background: rgb(119, 173, 224);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .link {
+        width: 145px;
+        height: 150px;
+        padding-left: 16px;
+        border-right: 1px solid rgb(224, 224, 224);
+        background: coral;
+        dt {
+            margin-bottom: 4px;
+            color: rgb(77, 77, 77);
+            font-size: 12px;
+            line-height: 20px;
+        }
+        dd {
+            padding-left: 8px;
+            background: url(../images/footer-hash.png)-6px -494px no-repeat;
+            transition: margin-left .2s;
+            a {
+                color: grey;
+                font-size: 12px;
+                line-height: 20px;
+            }
+            // & 父级
+            &:hover {
+                margin-left: 5px;
+                background: url(../images/footer-hash.png)-6px -513px no-repeat;
+                a {
+                    color: #f10180;
+                }
+            }
+        }
+    }
+}

@@ -1,13 +1,10 @@
 @charset "utf-8";
-@import "common";
 $size:100%;
 $h:100px;
 #head {
     width: $size;
     height: $h;
-    background: darkkhaki;
     .head-wrap {
-        background: cornflowerblue;
         height: $h;
     }
 }
@@ -42,14 +39,51 @@ $h:100px;
 
 .head-cart {
     width: 96px;
-    // height: $h;
     background: chartreuse;
+    z-index: 9;
+    margin: 33px 0 0 15px;
+    .tool {
+        padding-right: 33px;
+        padding-left: 25px;
+        width: 36px;
+        height: 32px;
+        line-height: 32px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background: #f6f7f9;
+        border-radius: 2px;
+        position: relative;
+        .ico-bag {
+            background-image: url(../images/index.png);
+            background-position: 0 -208px;
+            width: 12px;
+            height: 17px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+        .gwd {
+            font-size: 12px;
+            color: #333;
+        }
+        .count {
+            position: absolute;
+            top: 8px;
+            right: 3px;
+            border-radius: 8px;
+            height: 16px;
+            width: 24px;
+            line-height: 16px;
+            color: #fff;
+            text-align: center;
+            background-color: #f00581;
+        }
+    }
 }
 
 .head-search {
     margin-top: 33px;
     width: 391px;
-    background: coral;
     .head-form {
         width: 387px;
         height: 32px;
@@ -93,6 +127,22 @@ $h:100px;
     .hotword {
         height: 20px;
         margin: 2px;
-        background: chartreuse;
+        display: flex;
+        align-items: center;
+        li {
+            margin-right: 6px;
+            display: flex;
+            justify-content: space-between;
+            a {
+                display: block;
+                font-size: 12px;
+                color: #999;
+                margin-right: 6px;
+            }
+            span {
+                font-size: 12px;
+                color: #999;
+            }
+        }
     }
 }
