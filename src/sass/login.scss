@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import "reset";
+// 公共版心
+.header-wrap,
+.body-wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+$size:100%;
+$h1:100px;
+// header区域
+#header {
+    width: $size;
+    height: $h1;
+    .header-wrap {
+        height: $h1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .c-logo-link {
+            background: url(../images/login.png) no-repeat;
+            background-position: -308px -57px;
+            width: 125px;
+            height: 100px;
+            display: inline-block;
+        }
+    }
+}
+
+.c-service {
+    background: url(../images/login.png) no-repeat;
+    background-position: 0 0;
+    width: 304px;
+    height: 100px;
+}
+
+// body区域
+$h2:650px;
+#body {
+    width: $size;
+    height: $h2;
+    background: url("https://a.vpimg2.com/upload/flow/2020/09/28/28/16012818429045.jpg") no-repeat top center;
+    .body-wrap {
+        background: chartreuse;
+        padding: 50px 20px;
+        min-height: 550px;
+        .c-login {
+            width: 360px;
+            border-radius: 2px;
+            background: #fff;
+            height: 472px;
+        }
+    }
+}

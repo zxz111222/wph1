@@ -14,11 +14,11 @@ $h:43px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     .nav-cate {
         background: #f10180;
         width: 156px;
         height: auto;
-        margin-right: 20px;
         img {
             display: inline-block;
             vertical-align: middle;
@@ -67,6 +67,80 @@ $h:43px;
     color: white;
 }
 
-.gd .iconfont {
+.nav-gd .iconfont {
     font-size: 12px;
+}
+
+.nav-cate:hover+.menu {
+    display: block;
+    z-index: 3;
+}
+
+// 二级菜单部分
+.menu {
+    position: absolute;
+    top: 43px;
+    left: 0px;
+    z-index: 3;
+    width: 156px;
+    background: #f10180;
+    display: none;
+    ul li {
+        text-align: center;
+        a {
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+    li:hover {
+        background: #fff;
+    }
+    li:hover a {
+        color: #f10180;
+    }
+    .cartlist {
+        position: absolute;
+        left: 156px;
+        top: 0;
+        width: 900px;
+        min-height: 473px;
+        background: #fff;
+        display: none;
+        transition: top 0.3s ease;
+        .item {
+            padding: 20px;
+            display: none;
+        }
+    }
+}
+
+.menu:hover {
+    display: block;
+}
+
+// 更多二级菜单部分
+.gd-big {
+    padding-left: 3px;
+}
+
+.gd-big:hover {
+    box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, .06);
+    border-bottom: none;
+    z-index: 5;
+}
+
+.gd-big:hover+.gd-small {
+    display: block;
+}
+
+.gd-small {
+    position: absolute;
+    right: 0;
+    top: 43px;
+    background: #fff;
+    display: none;
+}
+
+.gd-small:hover {
+    display: block;
 }

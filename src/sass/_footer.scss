@@ -6,10 +6,8 @@ $h:494px;
     height: $h;
     border-top: 1px solid #ebebeb;
     background-color: #fcfcfc;
-    // color: #4d4d4d;
     .footer-wrap {
-        height: $h;
-        background: plum;
+        height: 498px;
     }
 }
 
@@ -59,7 +57,6 @@ $h:494px;
     line-height: 20px;
     overflow: hidden;
     margin: 37px 0px 25px;
-    background: rgb(119, 173, 224);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +65,6 @@ $h:494px;
         height: 150px;
         padding-left: 16px;
         border-right: 1px solid rgb(224, 224, 224);
-        background: coral;
         dt {
             margin-bottom: 4px;
             color: rgb(77, 77, 77);
@@ -92,6 +88,85 @@ $h:494px;
                     color: #f10180;
                 }
             }
+        }
+    }
+}
+
+.footer-infor {
+    width: $size;
+    height: 118px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    .footer-infor-link {
+        background: #d7237e;
+        line-height: 30px;
+        a {
+            margin-left: 2px;
+            margin-right: 2px;
+            color: #fff;
+        }
+    }
+    .footer-infor-txt {
+        color: #999;
+        margin: 14px 0;
+        line-height: 20px;
+        a {
+            color: grey;
+            text-decoration: none;
+            img {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 3px;
+            }
+        }
+        a:hover {
+            color: #f10180;
+        }
+    }
+}
+
+.footer-ft {
+    margin: 0 auto;
+    width: 960px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    a {
+        display: inline-block;
+        i {
+            display: inline-block;
+            margin-right: 9px;
+            height: 40px;
+            background: url(../images/footer-hash.png) no-repeat;
+        }
+        .pic1 {
+            width: 105px;
+            background-position: 0 0;
+        }
+        .pic2 {
+            width: 99px;
+            background-position: 0 -150px;
+        }
+        .pic3 {
+            width: 76px;
+            background: url(../images/footer_no.png) no-repeat;
+        }
+        .pic4 {
+            width: 70px;
+            background-position: 0 -250px;
+        }
+        .pic5 {
+            width: 75px;
+            background-position: 0 -300px;
+        }
+        .pic6 {
+            width: 76px;
+            background-position: 0 -400px;
+        }
+        .pic7 {
+            width: 76px;
+            background-position: 0 -450px;
         }
     }
 }

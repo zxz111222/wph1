@@ -1,0 +1,19 @@
+@charset "utf-8";
+$size:100%;
+$h:850px;
+#hot {
+    width: $size;
+    height: $h;
+    background: cadetblue;
+    .hot-wrap {
+        height: $h;
+        background: seashell;
+        .sale {
+            margin-bottom: 20px;
+            img {
+                width: $size;
+                height: 70px;
+            }
+        }
+    }
+}
