@@ -51,7 +51,6 @@ $h:510px;
             display: flex;
             justify-content: space-between;
             span {
-                // margin-left: 60px;
                 color: #e8e8e8;
             }
         }
@@ -62,8 +61,8 @@ $h:510px;
 #right {
     position: absolute;
     top: 50%;
-    margin-top: -60px;
-    background: ;
+    margin-top: -53px;
+    // background: rgb(119, 118, 118);
     color: #fff;
     font-size: 100px;
     text-decoration: none;
@@ -72,6 +71,7 @@ $h:510px;
 
 #left {
     left: 20px;
+    background: rgba(0, 0, 0, .2);
 }
 
 #right {

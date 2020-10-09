@@ -1,0 +1,45 @@
+@charset "utf-8";
+$size:100%;
+$h:740px;
+#new {
+    width: $size;
+    min-height: $h;
+    background: cornflowerblue;
+    .new-wrap {
+        min-height: $h;
+        background: cadetblue;
+        .pingou {
+            width: $size;
+            height: 120px;
+            background: url("https://h2.appsimg.com/b.appsimg.com/upload/mst/2020/09/28/119/284ca936f8d137e733add97089f923f5.png") center top no-repeat;
+        }
+    }
+}
+
+.list {
+    font-size: 14px;
+    li {
+        width: 238px;
+        height: 397px;
+        padding: 10px;
+        float: left;
+        margin: 8px;
+        border: 1px solid #ccc;
+        position: relative;
+        cursor: pointer;
+        p {
+            width: 200px;
+            height: 48px;
+            line-height: 24px;
+            overflow: hidden;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            display: block;
+        }
+        span {
+            display: block;
+        }
+    }
+}

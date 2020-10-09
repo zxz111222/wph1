@@ -131,6 +131,7 @@ $h:43px;
 
 .gd-big:hover+.gd-small {
     display: block;
+    z-index: 20;
 }
 
 .gd-small {
@@ -143,4 +144,5 @@ $h:43px;
 
 .gd-small:hover {
     display: block;
+    z-index: 20;
 }
