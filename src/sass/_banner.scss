@@ -4,22 +4,25 @@ $h:510px;
 #banner {
     width: $size;
     height: $h;
-    background: url(../images/banner_bg.jpg) no-repeat;
-    background-position: center top;
+    background: olivedrab;
     .banner-wrap {
-        padding: 45px 0 20px 0;
+        width: $size;
+        margin: 0 auto;
+        padding: 27px 0 20px 0;
         height: 480px;
-        background: olivedrab;
+        background: url(../images/banner_bg.jpg) no-repeat;
+        background-position: center top;
+        background-size: 100% 100%;
     }
 }
 
 // 轮播图
 .lunbo {
-    width: 976px;
+    width: 835px;
     height: 440px;
-    border: 1px solid red;
-    border-bottom: none;
-    margin: 20px auto;
+    border: 20px solid rgba(255, 255, 255, 0.7);
+    // border-bottom: none;
+    margin: 0 auto;
     position: relative;
     ul li {
         position: absolute;
@@ -28,8 +31,8 @@ $h:510px;
         opacity: 0;
         img {
             display: inline-block;
-            width: 976px;
-            height: 400px;
+            width: 835px;
+            height: 390px;
         }
     }
     ol {
@@ -62,18 +65,17 @@ $h:510px;
     position: absolute;
     top: 50%;
     margin-top: -53px;
-    // background: rgb(119, 118, 118);
     color: #fff;
-    font-size: 100px;
+    font-size: 40px;
     text-decoration: none;
-    // display: none;
+    background: rgba(0, 0, 0, .2);
+    display: none;
 }
 
 #left {
-    left: 20px;
-    background: rgba(0, 0, 0, .2);
+    left: 0;
 }
 
 #right {
-    right: 20px;
+    right: 0;
 }

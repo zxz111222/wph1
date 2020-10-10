@@ -144,7 +144,6 @@ textarea {
 .top-wrap,
 .head-wrap,
 .nav-wrap,
-.banner-wrap,
 .fine-wrap,
 .hot-wrap,
 .new-wrap,
@@ -480,6 +479,29 @@ textarea {
   color: #999;
 }
 
+#search-list {
+  width: 389px;
+  left: -2px;
+  top: 34px;
+  position: absolute;
+  z-index: 333;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+#search-list li {
+  padding: 0 15px;
+  line-height: 30px;
+}
+#search-list li a {
+  font-size: 14px;
+  color: #333;
+}
+#search-list li:hover {
+  background: #f00581;
+  color: #fff;
+}
+
 #main-nav {
   width: 100%;
   height: 43px;
@@ -627,21 +649,23 @@ textarea {
 #banner {
   width: 100%;
   height: 510px;
-  background: url(../images/banner_bg.jpg) no-repeat;
-  background-position: center top;
+  background: olivedrab;
 }
 #banner .banner-wrap {
-  padding: 45px 0 20px 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 27px 0 20px 0;
   height: 480px;
-  background: olivedrab;
+  background: url(../images/banner_bg.jpg) no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
 }
 
 .lunbo {
-  width: 976px;
+  width: 835px;
   height: 440px;
-  border: 1px solid red;
-  border-bottom: none;
-  margin: 20px auto;
+  border: 20px solid rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
   position: relative;
 }
 .lunbo ul li {
@@ -652,8 +676,8 @@ textarea {
 }
 .lunbo ul li img {
   display: inline-block;
-  width: 976px;
-  height: 400px;
+  width: 835px;
+  height: 390px;
 }
 .lunbo ol {
   position: absolute;
@@ -685,17 +709,18 @@ textarea {
   top: 50%;
   margin-top: -53px;
   color: #fff;
-  font-size: 100px;
+  font-size: 40px;
   text-decoration: none;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
 }
 
 #left {
-  left: 20px;
-  background: rgba(0, 0, 0, 0.2);
+  left: 0;
 }
 
 #right {
-  right: 20px;
+  right: 0;
 }
 
 #fine {
@@ -950,12 +975,6 @@ textarea {
 
 #new {
   width: 100%;
-  min-height: 740px;
-  background: cornflowerblue;
-}
-#new .new-wrap {
-  min-height: 740px;
-  background: cadetblue;
 }
 #new .new-wrap .pingou {
   width: 100%;
@@ -969,26 +988,63 @@ textarea {
 .list li {
   width: 238px;
   height: 397px;
-  padding: 10px;
   float: left;
-  margin: 8px;
+  margin: 5px;
   border: 1px solid #ccc;
   position: relative;
   cursor: pointer;
 }
 .list li p {
-  width: 200px;
-  height: 48px;
-  line-height: 24px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 48px 22px 0;
+  width: 194px;
+  font-size: 16px;
+  color: #333;
 }
 .list li img {
-  width: 200px;
-  height: 200px;
+  width: 238px;
+  height: 219px;
   display: block;
 }
-.list li span {
+.list li .button {
   display: block;
+  border: 1px solid #f10180;
+  border-radius: 2px;
+  margin: 16px 24px 0;
+  width: 190px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #f10180;
+}
+.list li:hover {
+  border: 1px solid #f10180;
+}
+.list li:hover .button {
+  background: #f10180;
+  color: #fff;
+}
+
+.zhe {
+  margin: 3px 25px 0 23px;
+  width: 190px;
+  height: 33px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zhe span {
+  display: block;
+  color: #f10180;
+}
+.zhe .k {
+  font-size: 30px;
 }
 
 #footer {

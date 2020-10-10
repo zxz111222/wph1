@@ -114,6 +114,9 @@
             <div class="head-search float_right">
                 <div class="head-form">
                     <input class="c-input" type="text" placeholder="巴拉长裤低至36元" max-length="100">
+                    <!-- 搜索效果 -->
+                    <ul id="search-list"></ul>
+
                     <a class="c-button" href="">
                         <span class="c-icon"></span>
                     </a>
@@ -484,7 +487,7 @@
 
     <!-- new -->
     <div id="new">
-        <div class="new-wrap">
+        <div class="new-wrap clear_fix">
             <div class="pingou"></div>
             <div class="list">
                 <ul>
@@ -666,7 +669,39 @@
         </div>
     </div>
 </body>
-<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.8.3/jquery.lazyload.min.js"></script>
+<!-- <script src="https://suggest.taobao.com/sug?code=utf-8&q=apple&_ksTS=1600326651998_256&callback=taobao"></script> -->
 <script src="script/index.js"></script>
+<script>
+    const search = document.querySelector('.c-input');
+    const list = document.querySelector('#search-list');
+
+    function taobao(data) {
+        console.log(data.result);
+        let arr = data.result;
+        let str = '';
+        for (let value of arr) {
+            str += `
+                <li>${value[0]}</li>
+            `;
+        }
+        list.innerHTML = str;
+    }
+    search.oninput = function() {
+
+
+        //随着用户的输入，数据接口发送变化。
+        let scriptelement = document.querySelector('#scriptelement');
+        //如果存在上面的元素对象，带有此id名的script已经创建了。
+        if (scriptelement) { //如果存在script元素，删除
+            document.body.removeChild(scriptelement);
+        }
+        let cS = document.createElement('script');
+        cS.src = 'https://suggest.taobao.com/sug?code=utf-8&q=' + this.value + '&_ksTS=1600326651998_256&callback=taobao';
+        cS.id = 'scriptelement';
+        document.body.appendChild(cS);
+    };
+</script>
 
 </html>
