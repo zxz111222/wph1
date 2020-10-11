@@ -146,7 +146,7 @@ textarea {
 .nav-wrap,
 .fine-wrap,
 .hot-wrap,
-.new-wrap,
+.louceng,
 .footer-wrap {
   width: 1000px;
   margin: 0 auto;
@@ -973,13 +973,67 @@ textarea {
   margin-left: 2px;
 }
 
-#new {
+html,
+body {
   width: 100%;
 }
-#new .new-wrap .pingou {
+
+#loutinav {
+  width: 100px;
+  position: fixed;
+  top: 100px;
+  right: 6px;
+  padding: 10px;
+  background: #510008;
+  display: none;
+}
+#loutinav ul li {
+  height: 30px;
+  line-height: 30px;
+  list-style: none;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+#loutinav ul li span {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#loutinav .last {
+  border-bottom: none;
+}
+#loutinav .active span {
+  color: #fff;
+  display: block;
+}
+#loutinav li:hover span {
+  color: #FF9E2B;
+  display: block;
+}
+
+#header {
+  margin: 0 auto;
+  font-size: 20px;
+  color: #000;
+}
+
+#main {
+  width: 100%;
+}
+#main .louceng .pingou {
   width: 100%;
   height: 120px;
-  background: url("https://h2.appsimg.com/b.appsimg.com/upload/mst/2020/09/28/119/284ca936f8d137e733add97089f923f5.png") center top no-repeat;
+}
+#main .louceng .pingou img {
+  width: 100%;
+  height: 100%;
 }
 
 .list {

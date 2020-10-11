@@ -173,7 +173,55 @@
     new Lunbo().init();
 
 
-    // new部分数据渲染(时尚女装)
+    // 楼梯效果
+    function scroll() {
+        //滚动条的top值。
+        let top = $(window).scrollTop();
+        // 如果大于1000就显示，否则隐藏
+        top >= 1000 ? $('#loutinav').show() : $('#loutinav').hide();
+        // each遍历
+        $('.louceng').each(function(index, element) {
+            let loucengtop = $(this).offset().top; //每一个楼层的top值
+            // 如果loucengtop大于滚动条的值，
+            // 给第一个移除，第二个添加
+            if (loucengtop >= top) {
+                $('#loutinav li').removeClass('active');
+                $('#loutinav li').eq($(this).index()).addClass('active');
+                //返回 'false' 将停止循环，有一个满足条件终止循环。
+                return false;
+            }
+        });
+    }
+    scroll();
+    //滚轮事件触发
+    $(window).on('scroll', function() {
+        scroll();
+    });
+
+    // 2.点击左侧楼梯上面的按钮，右侧楼层运动到对应的位置。
+    // 求每一个楼层top位置。将固定的top值给滚动条的top值。
+    // document.documentElement.scrollTop
+
+    $('#loutinav li').not('.last').on('click', function() {
+        $(this).addClass('active').siblings().removeClass('active');
+        let loucengtop = $('.louceng').eq($(this).index()).offset().top;
+        $('html').animate({
+            scrollTop: loucengtop
+        });
+    });
+
+    // 4.回到顶部。
+    $('.last').on('click', function() {
+        $('html').animate({
+            scrollTop: 0
+        });
+    });
+
+
+
+
+
+    // main部分数据渲染(时尚女装)
     // http://192.168.11.12/wph/php/piclist.php
     const list = $('.list ul');
     $.ajax({ //获取远程接口的值

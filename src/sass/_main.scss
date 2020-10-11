@@ -1,12 +1,67 @@
 @charset "utf-8";
 $size:100%;
-#new {
+html,
+body {
     width: $size;
-    .new-wrap {
+}
+
+#loutinav {
+    width: 100px;
+    position: fixed;
+    top: 100px;
+    right: 6px;
+    padding: 10px;
+    background: #510008;
+    display: none;
+    ul li {
+        height: 30px;
+        line-height: 30px;
+        list-style: none;
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        color: #fff;
+        border-bottom: 1px solid hsla(0, 0%, 100%, .2);
+        span {
+            width: $size;
+            height: 30px;
+            line-height: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .last {
+        border-bottom: none;
+    }
+    .active span {
+        color: #fff;
+        display: block;
+    }
+    li:hover span {
+        color: #FF9E2B;
+        display: block;
+    }
+}
+
+#header {
+    // background: #cc6633;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #000;
+}
+
+#main {
+    width: $size;
+    .louceng {
         .pingou {
             width: $size;
             height: 120px;
-            background: url("https://h2.appsimg.com/b.appsimg.com/upload/mst/2020/09/28/119/284ca936f8d137e733add97089f923f5.png") center top no-repeat;
+            img {
+                width: $size;
+                height: $size;
+            }
         }
     }
 }

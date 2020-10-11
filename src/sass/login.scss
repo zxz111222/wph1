@@ -2,7 +2,8 @@
 @import "reset";
 // 公共版心
 .header-wrap,
-.body-wrap {
+.body-wrap,
+.cont-wrap {
     width: 1000px;
     margin: 0 auto;
 }
@@ -50,6 +51,55 @@ $h2:650px;
             border-radius: 2px;
             background: #fff;
             height: 472px;
+        }
+    }
+}
+
+.panel-body {
+    width: $size;
+    height: 315px;
+    background: darkcyan;
+}
+
+.panel-footer {
+    width: 300px;
+    height: 119px;
+    background: darkorange;
+    padding: 30px 30px 15px;
+    .third {
+        height: 40px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .x {
+            width: 120px;
+            height: 1px;
+            background: #e0e0e0;
+        }
+        span {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            background: url(../images/login.png) no-repeat;
+            background-position: -580px -161px;
+        }
+    }
+}
+
+// cont
+$h3:76px;
+#cont {
+    width: $size;
+    height: $h3;
+    .cont-wrap {
+        height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            color: #666;
         }
     }
 }
